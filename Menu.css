@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=My+Soul&family=Roboto:wght@900&family=Sansita+Swashed:wght@900&family=Satisfy&family=Secular+One&family=Smooch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Background {
+    background-color: #2c2e46;
+}
+
+header {
+    background-color: #1b1d31;
+    border: 10px solid #11121f;
+    height: 150px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+nav li a {
+    background-color: #323870;
+    border-radius: 20px;
+    border: 2px solid rgb(18, 18, 44);
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.cart ion-icon {
+    vertical-align: top;
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+.cart ion-icon {
+    vertical-align: top;
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+.cart a {
+    background-color: #323870;
+    border-radius: 20px;
+    border: 2px solid rgb(18, 18, 44);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Columns {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 50px;
+}
+
+.Pane {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 285px 110px 80px;
+    grid-template-areas: "image" "text" "info";
+    font-family: 'Abril Fatface', cursive;
+    background-color: #26273b;
+    border: 15px;
+    box-shadow: 10px 10px 8px black;
+    text-align: center;
+}
+
+.Pane:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.Pane-img {
+    grid-area: image;
+    background: url('images/B1.jpg');
+    background-size: cover;
+}
+
+.Pane-img2 {
+    grid-area: image;
+    background: url('images/B2.jpg');
+    background-size: cover;
+}
+
+.Pane-img3 {
+    grid-area: image;
+    background: url('images/B3.jpg');
+    background-size: cover;
+}
+
+.Pane-img4 {
+    grid-area: image;
+    background: url('images/fries.jpg');
+    background-size: cover;
+}
+
+.Pane-img5 {
+    grid-area: image;
+    background: url('images/chicken.jpg');
+    background-size: cover;
+}
+
+.Pane-img6 {
+    grid-area: image;
+    background: url('images/onion.jpg');
+    background-size: cover;
+}
+
+.Pane-img7 {
+    grid-area: image;
+    background: url('images/Chicken_Burrito.jpg');
+    background-size: cover;
+}
+
+.Pane-img8 {
+    grid-area: image;
+    background: url('images/Beef_Burrito.jpg');
+    background-size: cover;
+}
+
+.Pane-img9 {
+    grid-area: image;
+    background: url('images/Veggie.jpg');
+    background-size: cover;
+}
+
+.Pane-img10 {
+    grid-area: image;
+    background: url('images/coke.jpg');
+    background-size: cover;
+}
+
+.Pane-img11 {
+    grid-area: image;
+    background: url('images/Fanta.jpg');
+    background-size: cover;
+}
+
+.Pane-img12 {
+    grid-area: image;
+    background: url('images/Sprite.jpg');
+    background-size: cover;
+}
+
+.Pane-text {
+    grid-area: text;
+    font-size: 20px;
+    margin: 25px;
+}
+
+.Pane-text .Information {
+    color: black;
+    font-size: 13px;
+}
+
+.Pane-text p {
+    color: white;
+    font-size: 15px;
+    background-color: #26273b;
+    font-weight: 300;
+}
+
+.Pane-text h3 {
+    margin-top: 0px;
+    color: white;
+    font-size: 20px;
+}
+
+.Pane-Price {
+    grid-area: info;
+    font-size: 30px;
+    color: white;
+    background-color: #36395A;
+    text-align: center;
+}
+
+.Tab-But-info {
+    cursor: pointer;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    height: 35px;
+    width: 80px;
+}
+
+.Tab-But-info:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+
+
+/* POPUP INFO*/
+
+.DisplayPopUp .Overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.DisplayPopUp .Content {
+    font-family: 'Abril Fatface', cursive;
+    box-shadow: 10px 10px 8px black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: #7b7e97;
+    transform: translate(-50%, 50%) scale(0);
+    width: 500px;
+    height: 300px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.DisplayPopUp .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 30px;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.DisplayPopUp.active .Overlay {
+    display: block;
+}
+
+.DisplayPopUp.active .Content {
+    transition: all 200ms ease-in-out;
+    transform: translate(-50%, 50%) scale(1);
+}

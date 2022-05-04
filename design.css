@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=My+Soul&family=Roboto:wght@900&family=Sansita+Swashed:wght@900&family=Satisfy&family=Secular+One&family=Smooch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*                     HOME PAGE                       */
+
+body {
+    font-family: 'Anton', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Here we set the page size */
+
+.BackgroundImage {
+    height: 100vh;
+}
+
+nav {
+    height: 10hv;
+    width: 100%;
+    text-align: center;
+}
+
+.Pages li {
+    display: inline-block;
+    padding: 15px 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    list-style: none;
+}
+
+.Pages li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease 0s;
+}
+
+.Pages li a:hover {
+    color: rgb(82, 81, 81);
+}
+
+.Promotion {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
+    font-size: 25px;
+    border: 7px solid #610a13;
+    background-color: #9c1522;
+    color: black;
+}
+
+.Promotion p {
+    margin-top: 5px;
+}
+
+.Home {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#BtnScrollUp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    box-shadow: 0 0 10px black;
+    color: white;
+    outline: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Home {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.home-text {
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+
+.home-text h1 {
+    font-size: 4vmin;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+    transition: .5s;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 10px 0 #ccc;
+}
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 4px;
+    background: rgb(226, 77, 77);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* This line is used for the other websites putted it here to show that line and line about us is the basically the same except the color*/
+
+.lineAboutUs {
+    margin-top: 20px;
+    width: 470px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(56, 35, 35);
+    border-radius: 5px;
+}
+
+.quote {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Smooch', cursive;
+}
+
+.btn-group {
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.but {
+    align-items: center;
+    appearance: none;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 100px;
+    width: 250px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    border-radius: 30px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    border-radius: 20px;
+}
+
+.but:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.but:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-10px);
+    color: grey;
+    transition: 0.5s;
+}
+
+.but:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+#BtnScrollUp:hover {
+    background-color: #9c1522;
+}
+
+
+/*                   ABOUT US PAGE                  */
+
+.pos .pos-text {
+    margin-top: 50px;
+}
+
+.AboutUsSection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pos-text {
+    display: flex;
+    width: 65%;
+    margin-right: 30px;
+    margin-left: 3px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+
+/*                      LOCATION                     */
+
+.LocationGridLayout {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    height: 240vh;
+    width: 600px;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(87, 54, 54);
+    grid-gap: 50px;
+}
+
+.Pane {
+    margin-top: 30px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 285px 110px 80px;
+    grid-template-areas: "image" "text" "info" "contact";
+    font-family: 'Abril Fatface', cursive;
+    border: 15px;
+    box-shadow: 10px 10px 8px black;
+    border: 5px solid rgb(36, 21, 21);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Pane:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.Pane-img {
+    grid: image;
+    background: url('images/Shop1.jpg');
+    background-size: cover;
+}
+
+.Pane-img2 {
+    grid: image;
+    background: url('images/Shop2.jpg');
+    background-size: cover;
+}
+
+.Pane-img3 {
+    grid: image;
+    background: url('images/Shop3.jpg');
+    background-size: cover;
+}
+
+.Pane-Text {
+    grid-area: text;
+    font-size: 20px;
+    margin: 25px;
+}
+
+.Pane-Button {
+    grid: info;
+}
+
+.Phone {
+    grid: contact;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.Phone p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}

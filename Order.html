@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order with Us</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@900&family=Sansita+Swashed:wght@900&family=Satisfy&family=Secular+One&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="Background">
+    <header>
+        <div class="Style"></div>
+        <nav>
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="home.html" style="color:white;">Home</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon><span>0</span></a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="DisplayPopUp" id="popup-1">
+        <div class="Overlay"></div>
+        <div class="Content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h3>What Ingredients are included?</h3>
+            <br>
+            <hr>
+            <br>
+            <p>Consists of two 1.6 oz (45 g) beef patties, "special sauce" (a variant of Thousand Island dressing), shredded iceberg lettuce, American cheese slices, sliced dill pickles, and minced onions, served in a three-part sesame seed bun</p>
+        </div>
+    </div>
+
+    <div class="Columns">
+        <div class="Pane">
+            <div class="Pane-img"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Redemption Burger</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart1">Add Cart</button>
+
+            </div>
+            <div class="Pane-Price">
+                <p>€7.20</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img2"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Monster Burger</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart2">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€8.50</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img3"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Cheese Burger</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart3">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€4.50</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img4"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>French Fries</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart4">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€3.50</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img5"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Chicken Nuggets</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart5">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€3.00</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img6"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Onion Rings</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart6">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€2.50</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img7"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Chicken Burrito</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart7">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€6.50</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img8"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Beef Burrito</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart8">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€6.70</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img9"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Veggie Burrito</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart9">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€5.50</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img10"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Coca Cola</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart10">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€2.00</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img11"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Fanta</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart11">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€2.00</p>
+            </div>
+        </div>
+        <div class="Pane">
+            <div class="Pane-img12"></div>
+            <div class="Pane-text">
+                <span class="Information"><h3>Sprite</h3></span>
+                <button onclick="togglePopup()" class="Tab-But-info">Info</button>
+                <button class="Tab-But-info add-cart cart12">Add Cart</button>
+            </div>
+            <div class="Pane-Price">
+                <p>€2.00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="effects.js"></script>
+</body>
+
+</html>

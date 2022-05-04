@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order with Us</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@900&family=Sansita+Swashed:wght@900&family=Satisfy&family=Secular+One&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="Style"></div>
+        <nav>
+            <h1>Your Order</h1>
+            <ul>
+                <li><a href="Order.html" style="color: white;">Menu</a></li>
+                <li><a href="home.html" style="color: white;">Home</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon><span>0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">Product</h5>
+            <h5 class="product-price">Price</h5>
+            <h5 class="product-Quantity">Quantity</h5>
+            <h5 class="product-Total">Total</h5>
+        </div>
+        <div class="products">
+        </div>
+    </div>
+
+    <div class="PayButton">
+        <button id="Pressed">PAY</button>
+    </div>
+
+    <div class="PaySectionContainer">
+        <form action="Information.php" method="get"></form>
+        <p style="color: white;">First Name:</p>
+        <input type="text" name="firstname">
+        <p style="color: white;">Surname:</p>
+        <input type="text" name="Surname">
+        <p style="color: white;">
+            <ion-icon name="card-outline"></ion-icon>Card Number:</p>
+        <input type="text" name="Card Number">
+        <p style="color: white;">Date of Expiry:</p>
+        <input type="text" name="Date">
+
+        <div class="centerButton">
+            <input type="submit" id="DisplayInfo">
+        </div>
+        </form>
+
+        <p id="check"></p>
+
+    </div>
+
+    <!-- <script>
+        var confirm = document.querySelector("#DisplayInfo");
+
+        confirm.addEventListener("click", function() {
+            document.getElementById('check').innerHTML = "Thank you for purchasing with us";
+        });
+    </script> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="effects.js"></script>
+</body>
+
+</html>

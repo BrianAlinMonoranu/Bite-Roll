@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=My+Soul&family=Roboto:wght@900&family=Sansita+Swashed:wght@900&family=Satisfy&family=Secular+One&family=Smooch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c2e46;
+}
+
+header {
+    position: relative;
+    background-color: #1b1d31;
+    border: 10px solid #11121f;
+    height: 150px;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid rgb(71, 71, 71);
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+nav li a {
+    background-color: #323870;
+    border-radius: 20px;
+    border: 2px solid rgb(18, 18, 44);
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.cart ion-icon {
+    vertical-align: top;
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.cart a {
+    background-color: #323870;
+    border-radius: 20px;
+    border: 2px solid rgb(18, 18, 44);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.products-container {
+    background-color: white;
+    border: 10px solid black;
+    box-shadow: 10px 10px 8px black;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid black;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.product-title {
+    font-size: 20px;
+    width: 45%;
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Product image and name */
+
+.product {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 10px 10px 8px black;
+    font-family: 'Anton', sans-serif;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid gray;
+}
+
+.product:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.product-price {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.product-Quantity {
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    width: 30%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.product-Total {
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Products inside the cart*/
+
+.products {
+    font-family: 'Anton', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.basketTotalContainer {
+    font-family: 'Anton', sans-serif;
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.basketTotalTitle {
+    font-family: 'Anton', sans-serif;
+    width: 25%;
+}
+
+.basketTotal {
+    font-family: 'Anton', sans-serif;
+    width: 10%;
+}
+
+.PayButton {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#Pressed {
+    align-items: center;
+    appearance: none;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 80px;
+    width: 200px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    border-radius: 30px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    border-radius: 20px;
+}
+
+.PaySectionContainer {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#DisplayInfo {
+    text-align: center;
+    position: relative;
+    align-items: center;
+    appearance: none;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    border-radius: 30px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.centerButton {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#check {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 30px;
+    color: white;
+}
